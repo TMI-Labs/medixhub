@@ -285,7 +285,7 @@ function showPaywall() {
 }
 
 function openWHOP() {
-    if (WHOP_CHECKOUT_URL && WHOP_CHECKOUT_URL !== 'YOUR_WHOP_CHECKOUT_URL_HERE') {
+    if (WHOP_CHECKOUT_URL && WHOP_CHECKOUT_URL !== 'whop.com/checkout/plan_qhPnoHbDHs3IF') {
         window.open(WHOP_CHECKOUT_URL, '_blank');
     } else {
         alert('WHOP checkout link not configured yet. Set it up and paste the link in the code.');
@@ -388,10 +388,10 @@ Transcript:
 ${transcript}`;
 
     try {
-        const apiKey = GEMINI_API_KEY === 'YOUR_GEMINI_API_KEY_HERE' ? null : GEMINI_API_KEY;
+        const apiKey = GEMINI_API_KEY === 'AIzaSyADN6p32YfVptF0O962FKqATzbYa5UYHa4' ? null : GEMINI_API_KEY;
         if (!apiKey) {
             // Use free proxy or fallback
-            document.getElementById('diagnosisBox').textContent = '⚠️ Gemini API key not configured. Paste your key in the code (search for YOUR_GEMINI_API_KEY_HERE).\n\nFor now, here\'s a simulated analysis:\n\nDiagnosis: Based on the transcript, consider common conditions like upper respiratory infection, hypertension, or diabetes depending on symptoms mentioned.\n\nExplanation: This is a placeholder. Add your Gemini key for real AI analysis.\n\nMissing Questions: Family history, medication list, allergies.';
+            document.getElementById('diagnosisBox').textContent = '⚠️ Gemini API key not configured. Paste your key in the code (search for AIzaSyADN6p32YfVptF0O962FKqATzbYa5UYHa4).\n\nFor now, here\'s a simulated analysis:\n\nDiagnosis: Based on the transcript, consider common conditions like upper respiratory infection, hypertension, or diabetes depending on symptoms mentioned.\n\nExplanation: This is a placeholder. Add your Gemini key for real AI analysis.\n\nMissing Questions: Family history, medication list, allergies.';
             finalizeAnalysis();
             return;
         }
